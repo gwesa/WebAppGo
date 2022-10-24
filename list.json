@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1,
+  "firstName": "Alice",
+  "lastName": "Machuve",
+  "balance": 250000
+ },
+ {
+  "id": 2,
+  "firstName": "Subira",
+  "lastName": "Baturi",
+  "balance": 75000
+ },
+ {
+  "id": 3,
+  "firstName": "Jackson",
+  "lastName": "Gwesa",
+  "balance": 150000
+ },
+ {
+  "id": 4,
+  "firstName": "Milenium",
+  "lastName": "Antony",
+  "balance": 2780000
+ },
+ {
+  "id": 5,
+  "firstName": "Mawi",
+  "lastName": "Baraka",
+  "balance": 207340
+ },
+ {
+  "id": 6,
+  "firstName": "Rehema",
+  "lastName": "Jibaba",
+  "balance": 56287168
+ }
+]

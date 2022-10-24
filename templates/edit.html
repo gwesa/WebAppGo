@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickect</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+
+<body>
+    <h1>Fill the Form Below to Book Your Ticket</h1>
+
+    <form action="/save/{{.Title}}" method="POST">
+        <div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+        <div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+        <div><input name="email" rows="20" cols="80"></div>
+        <div><input type="submit" value="Save"></div>
+    </form>
+</body>
+
+</html>
