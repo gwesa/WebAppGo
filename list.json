@@ -1,38 +1,74 @@
 [
  {
   "id": 1,
-  "firstName": "Alice",
-  "lastName": "Machuve",
-  "balance": 250000
+  "firstName": "Gertrude",
+  "lastName": "Mwambuba",
+  "email": "alicebob@gmail.com",
+  "phone": "0789653456",
+  "fromdestination": "lpoii",
+  "todestination": "Mwanza",
+  "departuredate": "",
+  "seatnumber": 0,
+  "balance": 1123
  },
  {
   "id": 2,
-  "firstName": "Subira",
-  "lastName": "Baturi",
-  "balance": 75000
+  "firstName": "Mwaka",
+  "lastName": "Jimama",
+  "email": "mwaka@sma.co.tz",
+  "phone": "0692456754",
+  "fromdestination": "Dar es Salaam",
+  "todestination": "Dodoma",
+  "departuredate": "",
+  "seatnumber": 0,
+  "balance": 25000
  },
  {
   "id": 3,
-  "firstName": "Jackson",
-  "lastName": "Gwesa",
-  "balance": 150000
+  "firstName": "Gertrude",
+  "lastName": "Mwambuba",
+  "email": "alicebob@gmail.com",
+  "phone": "0789653456",
+  "fromdestination": "lpoii",
+  "todestination": "Dodoma",
+  "departuredate": "",
+  "seatnumber": 0,
+  "balance": 1233
  },
  {
   "id": 4,
-  "firstName": "Milenium",
-  "lastName": "Antony",
-  "balance": 2780000
+  "firstName": "Mwakaseke",
+  "lastName": "Machuve",
+  "email": "mileyjackson@gmail.com",
+  "phone": "",
+  "fromdestination": "Dar es Salaam",
+  "todestination": "TBR",
+  "departuredate": "",
+  "seatnumber": 12,
+  "balance": 54562
  },
  {
   "id": 5,
-  "firstName": "Mawi",
-  "lastName": "Baraka",
-  "balance": 207340
+  "firstName": "Gertrude",
+  "lastName": "Mwambuba",
+  "email": "alicebob@gmail.com",
+  "phone": "0692456754",
+  "fromdestination": "lpoii",
+  "todestination": "TBR",
+  "departuredate": "",
+  "seatnumber": 13,
+  "balance": 45000
  },
  {
   "id": 6,
-  "firstName": "Rehema",
-  "lastName": "Jibaba",
-  "balance": 56287168
+  "firstName": "Masanja",
+  "lastName": "Baraka",
+  "email": "alicebob1@gmail.com",
+  "phone": "0765356789",
+  "fromdestination": "Dar es Salaam",
+  "todestination": "Dodoma",
+  "departuredate": "12/11/2022",
+  "seatnumber": 34,
+  "balance": 28000
  }
 ]

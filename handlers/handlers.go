@@ -12,7 +12,7 @@ import (
 	"strconv"
 )
 
-//function to check correct user adding input (regular expression and non-empty field input)
+// function to check correct user adding input (regular expression and non-empty field input)
 func checkFormValue(w http.ResponseWriter, r *http.Request, forms ...string) (res bool, errStr string) {
 	for _, form := range forms {
 		m, _ := regexp.MatchString("^[a-zA-Z]+$", r.FormValue(form))
@@ -20,7 +20,7 @@ func checkFormValue(w http.ResponseWriter, r *http.Request, forms ...string) (re
 			return false, "All forms must be completed"
 		}
 		if m == false {
-			return false, "Use only english letters if firstname,lastname forms"
+			return false, "Use only english letters to fill up the Booking Form"
 		}
 
 	}
@@ -36,7 +36,7 @@ func NotSuccededShow(w http.ResponseWriter, r *http.Request) {
 
 }
 
-//handler to show user with id input
+// handler to show user with id input
 func ShowUserFunc(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		t, _ := template.ParseFiles("templates/showUserPage.html")
@@ -74,28 +74,28 @@ func ShowUserFunc(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//function to handle page with successful deletion
+// function to handle page with successful deletion
 func DeletedFunc(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "templates/deleted.html")
 }
 
-//serving file with error (add function:empty field input or uncorrect input)
+// serving file with error (add function:empty field input or uncorrect input)
 func NotSucceded(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "templates/notSucceded.html")
 }
 
-//function,which serve html file,when deleting was not succesful(id input is not correct)
+// function,which serve html file,when deleting was not succesful(id input is not correct)
 func NotSuccededDelete(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "templates/notSuccededDelete.html")
 }
 
-//function,which serve page with delete information input
+// function,which serve page with delete information input
 func DeleteUserServe(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "templates/deleteUser.html")
 
 }
 
-//function to delete user
+// function to delete user
 func DeleteUserFunc(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		t, _ := template.ParseFiles("templates/deleteUser.html")
@@ -144,7 +144,7 @@ func checkError(err error) {
 	}
 }
 
-//function to add user
+// function to add user
 func AddNewUserFunc(w http.ResponseWriter, r *http.Request) {
 
 	//creating new instance and checking method
@@ -164,7 +164,13 @@ func AddNewUserFunc(w http.ResponseWriter, r *http.Request) {
 		}
 		newUser.FirstName = r.FormValue("firstname")
 		newUser.LastName = r.FormValue("lastname")
+		newUser.Email = r.FormValue("email")
+		newUser.Phone = r.FormValue("phone")
+		newUser.FromDestination = r.FormValue("fromdestination")
+		newUser.ToDestination = r.FormValue("todestination")
+		newUser.DepartureDate = r.FormValue("departuredate")
 		var err error
+		newUser.SeatNumber, err = strconv.ParseFloat(r.FormValue("seatnumber"), 64)
 		newUser.Balance, err = strconv.ParseFloat(r.FormValue("balance"), 64)
 		checkError(err)
 
@@ -200,7 +206,7 @@ func AddNewUserFunc(w http.ResponseWriter, r *http.Request) {
 
 }
 
-//Index page handler
+// Index page handler
 func IndexFunc(w http.ResponseWriter, r *http.Request) {
 	au := model.ShowAllUsers()
 	t, err := template.ParseFiles("templates/indexPage.html")

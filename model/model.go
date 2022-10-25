@@ -28,6 +28,12 @@ type User struct {
 	Id        int     `json:"id"`
 	FirstName string  `json:"firstName"`
 	LastName  string  `json:"lastName"`
+	Email  string  `json:"email"`
+	Phone  string  `json:"phone"`
+	FromDestination  string  `json:"fromdestination"`
+	ToDestination  string  `json:"todestination"`
+	DepartureDate  string  `json:"departuredate"`
+	SeatNumber   float64 `json:"seatnumber"`
 	Balance   float64 `json:"balance"`
 }
 
