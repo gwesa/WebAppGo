@@ -5,42 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/assets/css/style.css">
+
     <title>Adding new user</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            margin: 1.2rem;
+        }
+        form{
+            background-color: transparent;
+            border-radius: 1.0rem;
+            padding: 2.0rem;
+            border-color: violet;
+        }
+        input{
+            border-radius: 1.0rem;
+            width: auto;
+            display: block;
+        }
+        button {
+            align-items: center;
+            border-radius: 1.0rem;
+            width: 280px;
+            background-color: grey;
+            
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Booking Form</h2>
-    <form method="POST" action="useraded">
+    <div class="container text-center text-lg-left text-font-20">
+        <h2 class="text-center">Booking Form</h2>
+        <form method="POST" action="useraded">
 
-        <label>Enter firstname</label><br>
-        <input type="text" name="firstname" /><br><br>
-
-        <label>Enter lastname</label><br>
-        <input type="text" name="lastname" /><br><br>
-
-        <label>Enter Email</label><br>
-        <input type="text" name="email" /><br><br>
-
-        <label>Enter Phone Number</label><br>
-        <input type="text" name="phone" /><br><br>
-
-        <label>Enter From Destination</label><br>
-        <input type="text" name="fromdestination" /><br><br>
-
-        <label>To Destination</label><br>
-        <input type="text" name="todestination" /><br><br>
-
-        <label>Departure Date and Time</label><br>
-        <input type="text" name="departuredate" /><br><br>
-
-        <label>Choose Seat Number</label><br>
-        <input type="number" name="seatnumber" /><br><br>
-
-        <label>Enter balance</label><br>
-        <input type="number" name="balance" /><br><br>
-
-        <input type="submit" value="Submit" />
-    </form>
+            <div class="row">
+                <div class="col-6 mb-2">
+                    <label>Enter First Name</label>
+                    <input type="text" name="firstname" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label>Enter Last Name</label>
+                    <input type="text" name="lastname" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-2">
+                    <label>Enter Email</label>
+                    <input type="text" name="email" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label>Enter Phone Number</label>
+                    <input type="text" name="phone" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-2">
+                    <label>From Destination</label>
+                    <input type="text" name="fromdestination" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label>To Destination</label>
+                    <input type="text" name="todestination" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 mb-2">
+                    <label>Departure Date</label>
+                    <input type="text" name="departuredate" />
+                </div>
+                <div class="col-4 mb-2">
+                    <label>Choose Seat</label>
+                    <input type="number" name="seatnumber" />
+                </div>
+                <div class="col-4 mb-2">
+                    <label>Cost</label>
+                    <input type="number" name="balance" />
+                </div>
+            </div>
+            <!-- <input class="button" type="submit" value="Submit" /> -->
+            <div class="row">
+                <div class="col-4 mb-2">
+                    <button type="submit" value="Submit">Make Booking</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
 </body>
 
 </html>

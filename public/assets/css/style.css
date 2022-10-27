@@ -3,8 +3,8 @@
 }
 
 body{
-    align-content: center;
+    /* align-content: center;
     margin-top: 50px;
-    text-align: center;
-    background-color: lightgrey;
+    text-align: center; */
+    background-color: rgb(203, 17, 17);
 }

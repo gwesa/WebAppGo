@@ -5,16 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Delete user</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            margin: 1.2rem;
+        }
+
+        form {
+            background-color: coral;
+            border-radius: 1.0rem;
+            padding: 2.0rem;
+            border-color: violet;
+        }
+
+        input {
+            border-radius: 1.0rem;
+            width: auto;
+            display: block;
+        }
+
+        .button {
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Please,Write Surely ID of Booking You Want To Cancel</h2>
-    <form method="POST" action="deleted">
-        <label>Enter ID</label><br>
-        <input type="text" name="id" /><br><br>
-        <input type="submit" value="Submit" />
-    </form>
+    <div class="container text-center text-lg-left">
+        <h2>Please,Write Surely ID of Booking You Want To Cancel</h2>
+        <form method="POST" action="deleted">
+            <label>Enter ID</label><br>
+            <input type="text" name="id" /><br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
 </body>
 
 </html>
