@@ -207,9 +207,9 @@ func AddNewUserFunc(w http.ResponseWriter, r *http.Request) {
 }
 
 // Index page handler
-func IndexFunc(w http.ResponseWriter, r *http.Request) {
-	au := model.ShowAllUsers()
-	t, err := template.ParseFiles("templates/indexPage.html")
-	checkError(err)
-	t.Execute(w, au)
+func IndexFunc(write http.ResponseWriter, request *http.Request) {
+	allUsers := model.ShowAllUsers()
+	template, error := template.ParseFiles("templates/indexPage.html")
+	checkError(error)
+	template.Execute(write, allUsers)
 }

@@ -9,6 +9,8 @@ func main() {
 	http.HandleFunc("/addnewuser/", handlers.AddNewUserFunc)
 	http.HandleFunc("/notsucceded", handlers.NotSucceded)
 
+	http.HandleFunc("/addspend/", handlers.AddNewSpend)
+
 	http.HandleFunc("/deleted", handlers.DeletedFunc)
 	http.HandleFunc("/deleteuser/deleted", handlers.DeleteUserFunc)
 	http.HandleFunc("/deleteuser/", handlers.DeleteUserServe)
