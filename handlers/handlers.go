@@ -146,7 +146,6 @@ func checkError(err error) {
 
 // function to add user
 func AddNewUserFunc(w http.ResponseWriter, r *http.Request) {
-
 	//creating new instance and checking method
 	newUser := &model.User{}
 	if r.Method == "GET" {
