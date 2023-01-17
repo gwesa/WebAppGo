@@ -1,17 +1,5 @@
 [
  {
-  "id": 4,
-  "firstName": "Mwakaseke",
-  "lastName": "Machuve",
-  "email": "mileyjackson@gmail.com",
-  "phone": "",
-  "fromdestination": "Dar es Salaam",
-  "todestination": "TBR",
-  "departuredate": "",
-  "seatnumber": 12,
-  "balance": 54562
- },
- {
   "id": 6,
   "firstName": "Masanja",
   "lastName": "Baraka",
@@ -60,18 +48,6 @@
   "balance": 134456
  },
  {
-  "id": 10,
-  "firstName": "masanja",
-  "lastName": "kabuta",
-  "email": "masanjakabuta@sma.co.tz",
-  "phone": "",
-  "fromdestination": "",
-  "todestination": "",
-  "departuredate": "",
-  "seatnumber": 0,
-  "balance": 0
- },
- {
   "id": 11,
   "firstName": "Masanja",
   "lastName": "kabuta",
@@ -94,5 +70,29 @@
   "departuredate": "12/11/2022",
   "seatnumber": 7,
   "balance": 50000
+ },
+ {
+  "id": 13,
+  "firstName": "Mwakaseke",
+  "lastName": "Machuve",
+  "email": "liwaha@gmail.com",
+  "phone": "0765457832",
+  "fromdestination": "Dar es Salaam",
+  "todestination": "Moshi Vijijini",
+  "departuredate": "11/11/2022",
+  "seatnumber": 23,
+  "balance": 30000
+ },
+ {
+  "id": 14,
+  "firstName": "LATIFA",
+  "lastName": "Mwambuba",
+  "email": "mileyjackson@gmail.com",
+  "phone": "0789653456",
+  "fromdestination": "Dar es Salaam",
+  "todestination": "Mbeya",
+  "departuredate": "12/11/2023",
+  "seatnumber": 12,
+  "balance": 25000
  }
 ]
